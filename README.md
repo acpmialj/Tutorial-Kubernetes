@@ -1,4 +1,6 @@
-# Kubernetes_en_Azure
+# Kubernetes_en_Azur
+
+Más información en https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-portal?tabs=azure-cli 
 
 Crear una instancia de “Servicio de Kubernetes”. Indicar un grupo de recursos. Elegir un cluster lo más pequeño posible (tamaño de nodo Standard_DS2_v2. West Europe. 1 único nodo (por cuotas). Permite hasta 110 pods por nodo. Escalado automático. 
 
