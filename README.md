@@ -1,4 +1,4 @@
-# Kubernetes_en_Azur
+# Kubernetes_en_Azure
 
 Más información en https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-portal?tabs=azure-cli 
 
@@ -21,3 +21,11 @@ Desde un navegador  http://dir_publica
 Se puede eliminar el cluster eliminando el grupo de recursos. 
 
 “az group delete --name myResourceGroup --yes --no-wait” 
+
+El fichero .yaml indica que se crea lo siguiente:
+
+1. Aplicación “azure-vote-back”. Un back-end basado en un almacén de datos en memoria, Redis. Se especifica una réplica.
+2. Servicio “azure-vote-back”, que especifica el puerto de acceso a la aplicación anterior. 
+3. Aplicación “azure-vote-front”, el front-end web. Una un contenedor “azure-vote-front”.
+4. Servicio “azure-vote-front” asociado a la aplicación anterior. Es de tipo “LoadBalancer”, lo que significa que solicita al proveedor Cloud (Azure) una dirección IP pública y el tráfico que llega a ella por el puerto 80 se redirige de forma balanceada a las instancias de la aplicación “azure-vote-front”.  
+
