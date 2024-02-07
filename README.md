@@ -27,6 +27,3 @@ Desde un navegador verificamos el acceso al servicio: `http://dir_publica`
 Se puede eliminar el cluster eliminando el grupo de recursos. 
 
 `az group delete --name myResourceGroup --yes --no-wait`
-
- 
-
