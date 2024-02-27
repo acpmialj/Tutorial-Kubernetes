@@ -22,3 +22,5 @@ En los ficheros de configuración de pods, se indica
 
 * El nombre de la carpeta
 * El secreto a usar, que contiene el resto de la información necesaria
+
+Se ofrecen dos ficheros .yaml de creación de pods, distintos en cuanto a la forma de declarar el volumen, pero equivalentes en funcionalidad. 
