@@ -1,0 +1,16 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: pod-env-file
+spec:
+  containers:
+    - name: env-map-configmap
+      image: nginx
+      volumeMounts:
+      - name: config
+        mountPath: "/config"
+        readOnly: true
+  volumes:
+  - name: config
+    configMap:
+      name: example-configmap
