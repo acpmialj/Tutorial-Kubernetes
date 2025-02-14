@@ -25,10 +25,11 @@ kind: Service
 metadata:
   name: nginx-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: nginx
   ports:
     - protocol: TCP
-      port: 80
-      nodePort: 30030
+      port: 8080
+      targetPort: 80
+      nodePort: 30080
